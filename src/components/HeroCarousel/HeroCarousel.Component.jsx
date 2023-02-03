@@ -116,6 +116,10 @@ const HeroCarousel = () => {
         slideToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
 
     };
 
