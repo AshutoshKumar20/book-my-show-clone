@@ -1,9 +1,9 @@
 import React from "react";
 
-const Poster = () => {
+const Poster = (props) => {
     return (
-        <div>Poster</div>
-    )
+        <div>{props.original_title}</div>
+    );
 }
 
-export default Poster
+export default Poster;
