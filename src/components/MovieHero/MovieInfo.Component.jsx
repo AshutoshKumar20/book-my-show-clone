@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PaymentModel from "../PaymentModel/Payment.Component";
 
 const MovieInfo = ({ movie }) => {
 
@@ -19,7 +20,7 @@ const MovieInfo = ({ movie }) => {
 
     return (
         <>
-            {/* <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price}/> */}
+            <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price} />
 
             <div className="flex flex-col gap-8">
                 <h1 className="text-white text-5xl font-bold">
@@ -31,11 +32,11 @@ const MovieInfo = ({ movie }) => {
                         {movie.runtime} min | {genres}
                     </h4>
                 </div>
-                <div className="flex items-center gap-3">
-                    <button className="bg-red-500 w-full py-3 text-white font-semibold rounded-lg">
+                <div className="flex items-center gap-3 w-full">
+                    <button onClick={rentMovie} className="bg-red-500 w-full py-3 text-white font-semibold rounded-lg">
                         Rent ₹ 149
                     </button>
-                    <button className="bg-red-600 w-full py-3 text-white font-semibold rounded-lg">
+                    <button onClick={buyMovie} className="bg-red-600 w-full py-3 text-white font-semibold rounded-lg">
                         Buy ₹ 599
                     </button>
                 </div>
