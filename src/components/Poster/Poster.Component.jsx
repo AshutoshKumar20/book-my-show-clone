@@ -23,7 +23,10 @@ const MoviePoster = (props) => {
 
 const PlayPoster = (props) => {
     return (
-        <Link to={`/movie/${props.id}`}>
+        <a href="https://in.bookmyshow.com/events/sameer-anjaan-teaches-lyrics-writing/ET00317512"
+            target="_blank"
+            rel="noreferrer"
+        >
             <div className="flex flex-col items-start gap-2 px-1 md:px-3">
                 <div className="h-40 md:h-80">
                     {props.src && <img
@@ -45,7 +48,7 @@ const PlayPoster = (props) => {
                     {props.title}
                 </h3>
             </div>
-        </Link>
+        </a>
     );
 }
 
